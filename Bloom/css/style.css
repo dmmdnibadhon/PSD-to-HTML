@@ -1,0 +1,257 @@
+/* CSS variables start */
+:root{
+    --purple_color: #a066c9;
+    --black_color: #0d113d;
+    --white_color: #ffffff;
+    --Monserrat_font: 'Montserrat', sans-serif;
+}
+/* CSS variables end */
+
+/* Common CSS start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.img_fluid{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+/* Common CSS end */
+
+/* Nav start */
+#nav{
+    padding: 40px 0;
+    background-color: orange;
+    /* display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 9;
+    width: 100%; */
+}
+#nav .nav_items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav .nav_items .logo{}
+#nav .nav_items .logo a{}
+#nav .nav_items .logo a img{}
+#nav .nav_items .manu{}
+#nav .nav_items .manu ul{
+    display: flex;
+}
+#nav .nav_items .manu ul li{
+    margin-left: 20px;
+}
+#nav .nav_items .manu ul li a{
+    color: var(--white_color);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+#nav .nav_items .manu ul li a:hover{
+    color: var(--purple_color);
+}
+#nav .nav_items .manu ul li a#apurple{
+    color: var(--purple_color);
+}
+/* Nav end */
+
+/* Banner start */
+#banner{
+    background: url(image);
+    background-size: cover;
+    /* text-align: center;
+    position: relative;
+    padding: 190px 0; */
+}
+/* #banner::after{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+} */
+#banner h1{
+    color: var(--white_color);
+    font-size: 70px;
+    font-weight: 800;
+    font-family: var(--Monserrat);
+    text-transform: uppercase;
+    padding-bottom: 45px;
+}
+#banner h1 span{
+    color: var(--purple_color);
+}
+#banner p{
+    color: var(--white_color);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    line-height: 26px;
+    padding-bottom: 60px;
+}
+#banner p span{
+    display: block;
+}
+#banner a{
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    width: 265px;
+    border: 2px solid var(--white_color);
+    border-radius: 5px;
+    padding: 24px 64px;
+    transition: all linear .3s;
+}
+#banner a#apurple{
+    background: var(--purple_color);
+    border: 2px solid var(--purple_color);
+}
+#banner a:hover{
+    background: var(--purple_color);
+    border: 2px solid var(--purple_color);
+}
+/* Banner end */
+
+/* Wareb start */
+#wareb{
+    padding: 65px 0;
+}
+.wareb_main{
+    display: flex;
+}
+.wareb_main .wareb_items{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.wareb_main .wareb_items .text{
+    width: 654px;
+    text-align: left;
+}
+.wareb_main .wareb_items .text h2{
+    color: var(--black_color);
+    font-size: 36px;
+    font-weight: 600;
+    font-family: var(--Monserrat);
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 12px;
+    line-height: 44px;
+}
+.wareb_main .wareb_items .text h2::before{
+    content: "";
+    width: 5px;
+    height: 85px;
+    background: var(--purple_color);
+    border-radius: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wareb_main .wareb_items .text h2 span{
+    color: var(--purple_color);
+}
+.wareb_main .wareb_items .text p{
+    color: var(--black_color);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    line-height: 26px;
+    padding: 50px 0;
+}
+.wareb_main .wareb_items .text a{
+    width: 260px;
+    border: 2px solid var(--black_color);
+    border-radius: 5px;
+    text-align: center;
+    padding: 23px 77px;
+    font-size: 16px;
+    color: var(--black_color);
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    text-transform: uppercase;
+}
+.wareb_main .wareb_items .image{
+    width: 457px;
+}
+.wareb_main .wareb_items .image img{
+    position: relative;
+}
+.wareb_main .wareb_items .image img .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* Wareb end */
+
+/* Middle banner start */
+#mbanner{
+    padding: 74px 0;
+}
+.mb_main .mbanner_items{
+    
+}
+.mb_main .mbanner_items .mbtext {
+    display: flex;
+    gap: 30px;
+}
+.mb_main .mbanner_items .mbtext .create_ss{
+    width: 360px;
+}
+.mb_main .mbanner_items .mbtext .create_ss a{
+    width: 70px;
+}
+.mb_main .mbanner_items .mbtext .create_ss h4{
+    display: inline;
+    color: var(--black_color);
+    font-size: 21px;
+    font-weight: 600;
+    font-family: var(--Monserrat);
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.mb_main .mbanner_items .mbtext .create_ss p{
+    color: var(--black_color);
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    padding-top: 30px;
+}
+.mb_main .mbanner_items .mb_banner{
+    background: url(../Images/PSD-16/mb_banner.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+.mb_main .mbanner_items .mb_banner .overlay{}
+.mb_main .mbanner_items .mb_banner .overlay h2{}
+.mb_main .mbanner_items .mb_banner .overlay a{}
+/* Middle banner end */

@@ -3,6 +3,7 @@
     --purple_color: #a066c9;
     --black_color: #0d113d;
     --white_color: #ffffff;
+    --gray_white_color: #a5a5a5;
     --Monserrat_font: 'Montserrat', sans-serif;
 }
 /* CSS variables end */
@@ -29,6 +30,9 @@ ul, ol, li{
 .container{
     width: 940px;
     margin: 0 auto;
+}
+.all_common_part{
+    padding-bottom: 40px;
 }
 .all_common_part h3{
     color: var(--black_color);
@@ -357,7 +361,9 @@ ul, ol, li{
 /* Services part end */
 
 /* Contactus part start */
-#contactus{}
+#contactus{
+    padding-top: 40px;
+}
 .contactus_items{
     display: flex;
 }
@@ -375,6 +381,7 @@ ul, ol, li{
     line-height: 26px;
     font-weight: 600;
     font-family: var(--Monserrat_font);
+    padding: 30px 0 30px;
 }
 .contactus_items .text p{
     color: var(--black_color);
@@ -383,14 +390,105 @@ ul, ol, li{
     font-weight: 300;
     font-family: var(--Monserrat_font);
 }
-.contactus_items .text p{}
+.contactus_items .text ul{
+    padding-top: 50px;
+}
+.contactus_items .text ul li{
+    position: relative;
+    padding-left: 20px;
+}
+.contactus_items .text ul li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 11px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: var(--gray_white_color);
+}
+.contactus_items .text ul li p{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 35px;
+    font-weight: 300;
+    font-family: var(--Monserrat_font);
+}
+.contactus_btn{
+    background: var(--purple_color);
+    padding: 50px 0;
+}
+.contactus_btn_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactus_btn_info .text h4{
+    color: var(--white_color);
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--Monserrat_font)
+}
+.contactus_btn_info .btn{}
+.contactus_btn_info .btn a{
+    color: var(--white_color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Monserrat);
+    width: 265px;
+    border: 2px solid var(--white_color);
+    border-radius: 5px;
+    padding: 24px 64px;
+    transition: all linear .3s;
+}
 /* Contactus part end */
 
-/* Lab part start */
-/* Lab part end */
+/* Portfolio part start */
+#portfolio{
+    padding: 70px 0;
+}
+.portfolio_main{
+    display: flex;
+    gap: 30px;
+}
+.portfolio_main .portfolio_items{}
+.portfolio_main .portfolio_items img{
+    width: 300px;
+}
+/* Portfolio part end */
 
-/* Lab part start */
-/* Lab part end */
+/* Blog part start */
+#blog{}
+.blog_info{}
+.blog_info .blog_text{
+    display: flex;
+    gap: 30px;
+}
+.blog_info .blog_text h5{
+    width: 750px;
+    color: var(--purple_color);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--Monserrat_font);
+    padding: 40px 0;
+}
+.blog_info .blog_text p{
+    width: 175px;
+    color: var(--gray_white_color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--Monserrat_font);
+    padding: 40px 0;
+}
+.blog_info .blog_text p span{
+    color: var(--black_color);
+}
+/* Blog part end */
 
 /* Lab part start */
 /* Lab part end */
